@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>QUICKSTACK - 在庫管理を、現場で回る仕組みに。</title>
+  <meta name="description" content="QRスキャン入出庫、移動平均原価、セット販売(Bundle)、取消、監査機能を備えた在庫管理SaaS。現場の速さと数字の信頼性を両立します。" />
+
+  <!-- OGP（og.png がある場合に有効） -->
+  <meta property="og:title" content="QUICKSTACK - 在庫管理を、現場で回る仕組みに。" />
+  <meta property="og:description" content="現場導線の速さと、数字の信頼性を両立する在庫管理SaaS。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.png" />
+  <!-- 公開後に差し替え推奨：あなたのPages URL -->
+  <!-- <meta property="og:url" content="https://<username>.github.io/QUICKSTACK/" /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a class="logo" href="./" aria-label="QUICKSTACK">
+        <img src="assets/logo.svg" alt="QUICKSTACK" class="logo-img" />
+        <span class="logo-text">QUICKSTACK</span>
+      </a>
+
+      <!-- Stripeの本番URLに差し替え -->
+      <a href="https://buy.stripe.com/test_..." class="btn header-btn">今すぐ始める</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">在庫管理を、現場で回る仕組みに。</h1>
+          <p class="hero-subtitle">
+            QRスキャン入出庫・移動平均原価・セット販売(Bundle)・取消・監査<br />
+            “数字の信頼性”と“現場導線の速さ”を、この一つで。
+          </p>
+
+          <a href="https://buy.stripe.com/test_..." class="btn btn-full-width">今すぐ始める (Stripeへ)</a>
+          <p class="price-note"><strong>初月880円</strong>、2か月目以降1,980円/月（税込）</p>
+        </div>
+
+        <div class="hero-mockups-container">
+          <div class="mockup mockup-left">
+            <img src="assets/image_1.png" alt="QUICKSTACK 作業画面（QRスキャン）" class="screen-img" />
+          </div>
+          <div class="mockup mockup-right">
+            <img src="assets/image_2.png" alt="QUICKSTACK ダッシュボード画面" class="screen-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">その在庫データ、本当に信じられますか？</h2>
+
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline>
+              </svg>
+            </div>
+            <div class="solution-content">
+              <h3>在庫と原価がズレる</h3>
+              <p>→ <strong>移動平均で自動計算</strong>。入庫のたびに原価を再計算し、常に正しい粗利を可視化します。</p>
+            </div>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div class="solution-content">
+              <h3>セット販売で誤出庫</h3>
+              <p>→ <strong>最大出庫可能数＆不足強調</strong>。構成SKUの在庫から、あと何セット作れるかを瞬時に判断。</p>
+            </div>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="solution-content">
+              <h3>誰が何をしたか不明</h3>
+              <p>→ <strong>監査ログ＆健全性チェック</strong>。全操作を記録し、不整合をシステムが常時監視します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="container">
+        <h2 class="section-title">現場と経営をつなぐ機能</h2>
+
+        <div class="features-grid">
+          <div class="feature-category">
+            <h3>在庫・原価管理</h3>
+            <ul class="feature-list">
+              <li>商品マスタ / 最小在庫アラート</li>
+              <li>移動平均原価（入庫で自動更新）</li>
+              <li>売上・原価・粗利の自動計算</li>
+            </ul>
+          </div>
+
+          <div class="feature-category">
+            <h3>Bundle（セット販売）</h3>
+            <ul class="feature-list">
+              <li>複数SKUをセット化（Bundle）</li>
+              <li>最大出庫可能セット数を算出</li>
+              <li>不足/注意SKUを強調表示</li>
+              <li>Bundlesカードからワンタップ出庫</li>
+            </ul>
+          </div>
+
+          <div class="feature-category">
+            <h3>業務オペレーション</h3>
+            <ul class="feature-list">
+              <li>QRスキャンで自動判定→フォーム遷移</li>
+              <li>取消（REVERSAL）で履歴を維持し修正</li>
+              <li>CSVエクスポート/インポート</li>
+            </ul>
+          </div>
+
+          <div class="feature-category">
+            <h3>ガバナンス（統制）</h3>
+            <ul class="feature-list">
+              <li>権限管理（RBAC）：現場は入出庫のみ</li>
+              <li>監査ログ（Audit Log）</li>
+              <li>健全性チェック（Integrity Check）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">使い方はシンプル（3ステップ）</h2>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">登録</h3>
+            <p>商品マスタやBundle（セット商品）を登録します。</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">QRで入出庫</h3>
+            <p>現場でQRコードをスキャン。スマホで完結。</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">数字で判断</h3>
+            <p>原価・粗利・在庫推移が整い、判断が速くなります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing-section">
+      <div class="container">
+        <h2 class="section-title">料金</h2>
+
+        <div class="pricing-card">
+          <div class="plan-name">スタンダード</div>
+          <div class="plan-price">
+            <div class="price-initial">880円<span>/ 初月</span></div>
+            <div class="price-normal">2か月目以降：1,980円/月（税込）</div>
+          </div>
+
+          <ul class="plan-features">
+            <li>・QRスキャン入出庫</li>
+            <li>・移動平均原価</li>
+            <li>・Bundle（セット販売）</li>
+            <li>・取消（REVERSAL）</li>
+            <li>・監査ログ / 健全性チェック</li>
+          </ul>
+
+          <a href="https://buy.stripe.com/test_..." class="btn btn-full-width">今すぐ始める</a>
+          <p class="cancel-note">いつでも解約できます（契約期間の縛りなし）。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">よくある質問</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">スマホだけで運用できますか？</summary>
+            <div class="faq-answer">はい。QRスキャン→入出庫→記録まで、スマホ導線を前提にしています。PCは管理・分析で併用すると効率的です。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">取消（修正）はできますか？</summary>
+            <div class="faq-answer">可能です。履歴を消さずに反転（REVERSAL）で整合性を保つため、監査・統制の観点でも安全です。</div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">問い合わせはどうすればよいですか？</summary>
+            <div class="faq-answer">メールで対応します。<a class="inline-link" href="mailto:your@email.com">your@email.com</a> を差し替えてご利用ください。</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta-section">
+      <div class="container">
+        <h2 class="final-cta-title">在庫のズレで、現場と数字が揉める時間を終わらせる。</h2>
+        <a href="https://buy.stripe.com/test_..." class="btn btn-full-width">今すぐ始める</a>
+        <p class="price-note" style="color:#cbd5e1;">初月880円、2か月目以降1,980円/月（税込）</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="legal/terms.html">利用規約</a>
+        <a href="legal/privacy.html">プライバシーポリシー</a>
+        <a href="legal/tokusho.html">特定商取引法に基づく表記</a>
+        <a href="mailto:your@email.com">お問い合わせ</a>
+      </div>
+      <div class="copyright">© QUICKSTACK</div>
+    </div>
+  </footer>
+</body>
+</html>
