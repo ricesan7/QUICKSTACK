@@ -4,49 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>特定商取引法に基づく表記 | QUICKSTACK</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="description" content="在庫管理システム QUICKSTACK の特定商取引法に基づく表記です。" />
+  <style>
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",Arial,sans-serif;line-height:1.8;margin:0;color:#1A2B3C;background:#fff}
+    header,main,footer{max-width:980px;margin:0 auto;padding:24px}
+    header{border-bottom:1px solid #E5E7EB}
+    footer{border-top:1px solid #E5E7EB;color:#667085;font-size:14px}
+    a,a:visited{color:inherit}
+    h1{font-size:22px;margin:0 0 6px}
+    .muted{color:#667085;font-size:14px}
+    .toplinks{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+    .toplinks a{padding:8px 10px;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none}
+    table{width:100%;border-collapse:collapse;margin-top:18px}
+    th,td{border:1px solid #E5E7EB;padding:12px;vertical-align:top}
+    th{width:30%;background:#F8F9FA;text-align:left}
+    code{background:#F3F4F6;padding:2px 6px;border-radius:6px}
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-container">
-      <a class="logo" href="../">
-        <img src="../assets/logo.svg" alt="QUICKSTACK" class="logo-img" />
-        <span class="logo-text">QUICKSTACK</span>
-      </a>
-      <a href="https://buy.stripe.com/test_..." class="btn header-btn">今すぐ始める</a>
+  <header>
+    <h1>特定商取引法に基づく表記</h1>
+    <div class="muted">最終更新日：{}</div>
+    <div class="toplinks">
+      <a href="../index.html">トップへ戻る</a>
+      <a href="./terms.html">利用規約</a>
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="mailto:your@email.com">お問い合わせ</a>
     </div>
   </header>
 
-  <main class="section" style="padding-top:95px;">
-    <div class="container" style="max-width:800px;">
-      <h1 class="section-title" style="text-align:left;">特定商取引法に基づく表記</h1>
+  <main>
+    <table>
+      <tr>
+        <th>販売事業者</th>
+        <td>{}</td>
+      </tr>
+      <tr>
+        <th>運営責任者</th>
+        <td>{}</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>{}<br><span class="muted">※請求があれば遅滞なく開示します、などの運用も可</span></td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td>{}<br><span class="muted">※請求があれば遅滞なく開示します、などの運用も可</span></td>
+      </tr>
+      <tr>
+        <th>メールアドレス</th>
+        <td><a href="mailto:your@email.com">your@email.com</a></td>
+      </tr>
+      <tr>
+        <th>販売価格</th>
+        <td>
+          本サービス上の料金ページに表示します。<br>
+          例：初月880円、2か月目以降1,980円/月（税込）<br>
+          {{日本語例を記載}}
+        </td>
+      </tr>
+      <tr>
+        <th>商品代金以外の必要料金</th>
+        <td>
+          インターネット接続料金、通信料等はユーザーの負担となります。<br>
+          追加費用がある場合は本サービス上に表示します。
+        </td>
+      </tr>
+      <tr>
+        <th>支払方法</th>
+        <td>{}（例：クレジットカード / Stripe 等）</td>
+      </tr>
+      <tr>
+        <th>支払時期</th>
+        <td>各プランの申込時、または更新時に課金されます（詳細は決済画面に従います）。</td>
+      </tr>
+      <tr>
+        <th>提供時期</th>
+        <td>決済完了後、直ちに利用可能です（システム上の反映時間が発生する場合があります）。</td>
+      </tr>
+      <tr>
+        <th>解約・退会</th>
+        <td>
+          ユーザーはいつでも解約できます。解約の効力発生日、日割り、返金の有無は決済・プラン表示に従います。<br>
+          法令上必要な場合を除き返金は行いません。
+        </td>
+      </tr>
+      <tr>
+        <th>動作環境</th>
+        <td>
+          推奨環境：最新のChrome / Safari 等のモダンブラウザ。<br>
+          スマートフォンでの利用を想定しています。詳細は本サービス上に表示します。
+        </td>
+      </tr>
+    </table>
 
-      <div style="border:1px solid #E5E7EB; border-radius:12px; padding:20px; background:#fff;">
-        <p><strong>販売事業者</strong>：DIYstation</p>
-        <p><strong>運営責任者</strong>：片岡興三</p>
-        <p><strong>所在地</strong>：鳥取県日野郡日南町三吉566</p>
-        <p><strong>連絡先</strong>：メール：<a class="inline-link" href="diy.station.123@gmail.com">diy.station.123@gmail.com</a></p>
-        <p><strong>販売価格</strong>：初月880円、2か月目以降1,980円/月（税込）</p>
-        <p><strong>支払方法</strong>：クレジットカード（Stripe）</p>
-        <p><strong>提供時期</strong>：決済完了後、直ちに利用可能</p>
-        <p><strong>解約</strong>：管理画面からいつでも解約可能</p>
-        <p><strong>返金</strong>：デジタルサービスの性質上、原則返金不可（ただし法令に従う）</p>
-      </div>
-
-      <p style="margin-top:28px; color:#666;">最終更新日：YYYY年MM月DD日</p>
-    </div>
+    <p class="muted" style="margin-top:18px;">
+      ※ {} はあなたの事業情報に合わせて記載してください。例：{{日本語例を記載}}
+    </p>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-links">
-        <a href="./terms.html">利用規約</a>
-        <a href="./privacy.html">プライバシーポリシー</a>
-        <a href="./tokusho.html">特定商取引法に基づく表記</a>
-        <a href="mailto:diy.station.123@gmail.com">お問い合わせ</a>
-      </div>
-      <div class="copyright">© QUICKSTACK</div>
-    </div>
+  <footer>
+    <div>© <span id="y"></span> QUICKSTACK</div>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
