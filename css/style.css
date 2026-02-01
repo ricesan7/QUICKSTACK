@@ -369,3 +369,279 @@ body {
         border-width: 3px; /* 枠線を少し太くして強調 */
     }
 }
+
+/* =========================================
+   料金プランセクションのデザイン改善CSS
+========================================= */
+
+/* セクション全体の調整 */
+#pricing .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--text, #1A2B3C);
+}
+
+#pricing .section-lead {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--text-muted, #5A6A7A);
+  font-size: 0.9rem;
+}
+
+/* グリッドレイアウト（PCでは横並び、スマホでは縦並び） */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* スマホは1列 */
+  gap: 24px;
+  align-items: flex-start; /* 高さが違っても上揃え */
+}
+
+/* タブレット以上で3列など、画面幅に合わせて調整 */
+@media (min-width: 768px) {
+  .pricing-grid {
+    /* 5つのプランをどう並べるかの設定例。必要に応じて変更してください */
+    /* 例: 3列で折り返す */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* PCなど広い画面での調整 */
+@media (min-width: 1200px) {
+   .pricing-grid {
+      /* 5列横並びにする場合（画面幅が十分ある前提） */
+      /* grid-template-columns: repeat(5, 1fr); */
+
+      /* おすすめを真ん中に大きく見せるレイアウト例 */
+       grid-template-columns: repeat(5, 1fr);
+       align-items: center;
+   }
+   /* おすすめプラン以外のカードを少し小さくする */
+   .pricing-card:not(.featured) {
+       transform: scale(0.95);
+   }
+   /* おすすめプランを大きくする */
+   .pricing-card.featured {
+       transform: scale(1.1);
+       z-index: 2;
+   }
+}
+
+
+/* --- 料金カード全体のスタイル --- */
+.pricing-card {
+  background-color: var(--white, #ffffff);
+  border: 1px solid var(--border, #E5E7EB);
+  border-radius: 16px; /* 角丸を強調 */
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 柔らかい影 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+  position: relative; /* バッジの位置基準 */
+  height: 100%; /* 高さを揃える */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ホバー時の動き */
+.pricing-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-dark, #0056b3);
+}
+@media (min-width: 768px) {
+    .pricing-card:hover {
+         transform: translateY(-5px);
+    }
+}
+
+/* --- カードヘッダー --- */
+.card-header {
+  padding: 24px 16px;
+  background-color: #F8FAFC;
+  border-bottom: 1px solid var(--border, #E5E7EB);
+  flex-grow: 0;
+}
+
+.plan-name {
+  color: var(--text, #1A2B3C);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.plan-target {
+  color: var(--text-muted, #5A6A7A);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* --- カードボディ --- */
+.card-body {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* 高さを埋める */
+}
+
+/* 価格表示 */
+.price-box {
+  margin-bottom: 32px;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text, #1A2B3C);
+  line-height: 1;
+}
+
+.unit {
+  font-size: 16px;
+  color: var(--text-muted, #5A6A7A);
+  font-weight: normal;
+}
+
+/* --- 機能リスト --- */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 auto 0; /* 下の余白を自動で埋めてボタンを底に押しやる */
+  text-align: left;
+  display: inline-block; /* 中央揃えしつつ左寄せ */
+  width: 100%;
+}
+
+.feature-list li {
+  margin-bottom: 14px;
+  color: var(--text, #1A2B3C);
+  position: relative;
+  padding-left: 32px; /* アイコン分のスペース */
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* 通常の機能（チェックアイコン） */
+.feature-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  color: var(--primary, #007AFF);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+/* 重要な項目（太字） */
+.feature-list li strong {
+  font-weight: 700;
+  color: var(--text, #1A2B3C);
+}
+
+/* 利用不可の機能（グレーアウトと×アイコン） */
+.feature-list li.disabled {
+  color: #A0AEC0; /* 薄いグレー */
+  text-decoration: line-through;
+}
+.feature-list li.disabled::before {
+  content: '×'; /* バツマーク */
+  color: #A0AEC0;
+  font-weight: normal;
+}
+
+/* オプション項目 */
+.feature-list li.option {
+  font-size: 13px;
+  color: var(--text-muted, #5A6A7A);
+  background-color: #F0F7FF;
+  padding: 10px 10px 10px 36px;
+  border-radius: 6px;
+  margin-top: 20px;
+  border: 1px dashed var(--primary, #007AFF);
+}
+.feature-list li.option::before {
+  content: '+';
+  color: var(--primary, #007AFF);
+  left: 12px;
+  top: 10px;
+}
+
+/* --- ボタンのスタイル調整 --- */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 32px; /* リストとの間隔 */
+  text-decoration: none;
+}
+
+/* プライマリボタン（塗りつぶし） */
+.btn-primary {
+  background-color: var(--primary, #007AFF);
+  color: var(--white, #ffffff);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark, #0056b3);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+/* アウトラインボタン（無料プラン用） */
+.btn-outline-primary {
+  background-color: transparent;
+  border: 2px solid var(--primary, #007AFF);
+  color: var(--primary, #007AFF);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary, #007AFF);
+  color: var(--white, #ffffff);
+}
+
+/* --- おすすめプラン（STANDARD）の強調 --- */
+.pricing-card.featured {
+  border: 2px solid var(--primary, #007AFF);
+  box-shadow: 0 16px 32px rgba(0, 122, 255, 0.2);
+  z-index: 10;
+}
+
+/* ヘッダーの色を変更 */
+.pricing-card.featured .card-header {
+  background-color: var(--primary, #007AFF);
+}
+.pricing-card.featured .plan-name,
+.pricing-card.featured .plan-target {
+  color: var(--white, #ffffff) !important;
+}
+
+/* おすすめバッジの表示 */
+.pricing-card.featured::after {
+  content: '人気 No.1';
+  position: absolute;
+  top: 26px;
+  right: -32px;
+  background-color: #FFD700; /* ゴールド */
+  color: #1A2B3C;
+  padding: 4px 40px;
+  font-weight: bold;
+  font-size: 12px;
+  transform: rotate(45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* スマホでのバッジ調整 */
+@media (max-width: 767px) {
+    .pricing-card.featured::after {
+        top: 20px;
+        right: -36px;
+        padding: 4px 36px;
+        font-size: 11px;
+    }
+}
