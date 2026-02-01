@@ -134,108 +134,126 @@
             </div>
         </section>
 
-        <section class="section pricing bg-light" id="pricing">
-            <div class="container">
-                <h2 class="section-title">選べる5つのプラン</h2>
-                
-                <div class="pricing-wrapper">
-                    <div class="pricing-card">
-                        <div class="plan-header">
-                            <h3>FREE</h3>
-                            <p class="target">個人利用向け</p>
-                        </div>
-                        <div class="price-display">
-                            <span class="amount">0</span><span class="currency">円/月</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>商品数: <strong>20個</strong></li>
-                            <li class="disabled">セット販売: 不可</li>
-                            <li class="disabled">組織機能: 不可</li>
-                            <li>メンバー: 1人 / 拠点: 1箇所</li>
-                            <li class="disabled">CSV出力 / 期末棚卸</li>
-                        </ul>
-                        <a href="https://example.com/signup" class="btn btn-outline btn-full">無料で始める</a>
-                    </div>
+<section class="section" id="pricing">
+  <div class="container">
+    <h2 class="section-title">選べる5つのプラン</h2>
+    <p class="section-lead">
+      ※全プラン共通機能：在庫管理（入出庫・調整）、移動平均法原価、QRコード、レポート、監査ログ
+    </p>
 
-                    <div class="pricing-card">
-                        <div class="plan-header">
-                            <h3>STARTER</h3>
-                            <p class="target">個人のしっかり管理に</p>
-                        </div>
-                        <div class="price-display">
-                            <span class="amount">980</span><span class="currency">円/月</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>商品数: <strong>40個</strong></li>
-                            <li>セット: 3個まで</li>
-                            <li class="disabled">組織機能: 不可</li>
-                            <li>メンバー: 1人 / 拠点: 1箇所</li>
-                            <li>CSV出力: <strong>対応</strong></li>
-                            <li class="disabled">期末棚卸: 不可</li>
-                        </ul>
-                        <a href="https://example.com/signup" class="btn btn-outline btn-full">今すぐ始める</a>
-                    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card free-plan">
+        <div class="card-header">
+          <h3 class="plan-name">FREE</h3>
+          <p class="plan-target">個人利用</p>
+        </div>
+        <div class="card-body">
+          <div class="price-box">
+            <span class="price">¥0</span>
+            <span class="unit">/月</span>
+          </div>
+          <ul class="feature-list">
+            <li>商品数: 20個まで</li>
+            <li class="disabled">セット: 利用不可</li>
+            <li class="disabled">組織機能: 不可</li>
+            <li>メンバー: 1人 / 拠点: 1箇所</li>
+            <li class="disabled">CSV出力: 不可</li>
+            <li class="disabled">期末棚卸: 不可</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary btn-block">無料で始める</a>
+        </div>
+      </div>
 
-                    <div class="pricing-card featured">
-                        <div class="recommend-tag">人気NO.1</div>
-                        <div class="plan-header">
-                            <h3>STANDARD</h3>
-                            <p class="target">複数人・本格運用に</p>
-                        </div>
-                        <div class="price-display">
-                            <span class="amount">2,980</span><span class="currency">円/月</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>商品数: <strong>250個</strong></li>
-                            <li>セット: 20個まで</li>
-                            <li><strong>組織機能: 対応</strong></li>
-                            <li>メンバー: 3人 / 拠点: 1箇所</li>
-                            <li>CSV出力 / 期末棚卸: <strong>対応</strong></li>
-                        </ul>
-                        <div class="plan-option">
-                            <p>【限定オプション】</p>
-                            <span>商品数追加 +¥1,480〜</span>
-                        </div>
-                        <a href="https://example.com/signup" class="btn btn-primary btn-full">今すぐ始める</a>
-                    </div>
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">STARTER</h3>
+          <p class="plan-target">個人利用（機能拡張）</p>
+        </div>
+        <div class="card-body">
+          <div class="price-box">
+            <span class="price">¥980</span>
+            <span class="unit">/月</span>
+          </div>
+          <ul class="feature-list">
+            <li>商品数: 40個まで</li>
+            <li>セット: 3個まで</li>
+            <li class="disabled">組織機能: 不可</li>
+            <li>メンバー: 1人 / 拠点: 1箇所</li>
+            <li>CSV出力: <strong>可</strong></li>
+            <li class="disabled">期末棚卸: 不可</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">申し込む</a>
+        </div>
+      </div>
 
-                    <div class="pricing-card">
-                        <div class="plan-header">
-                            <h3>PRO</h3>
-                            <p class="target">大規模・多拠点向け</p>
-                        </div>
-                        <div class="price-display">
-                            <span class="amount">9,800</span><span class="currency">円/月</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>商品数: <strong>2,000個</strong></li>
-                            <li>セット: 200個まで</li>
-                            <li>組織機能: <strong>対応</strong></li>
-                            <li>メンバー: 5人 / 拠点: 3箇所</li>
-                            <li>CSV出力 / 期末棚卸: <strong>対応</strong></li>
-                        </ul>
-                        <a href="https://example.com/signup" class="btn btn-outline btn-full">今すぐ始める</a>
-                    </div>
+      <div class="pricing-card featured">
+        <div class="card-header">
+          <h3 class="plan-name">STANDARD</h3>
+          <p class="plan-target">個人・上位向け</p>
+        </div>
+        <div class="card-body">
+          <div class="price-box">
+            <span class="price">¥2,980</span>
+            <span class="unit">/月</span>
+          </div>
+          <ul class="feature-list">
+            <li>商品数: <strong>250個まで</strong></li>
+            <li>セット: <strong>20個まで</strong></li>
+            <li>組織機能: <strong>可</strong></li>
+            <li>メンバー: 3人 / 拠点: 1箇所</li>
+            <li>CSV出力: <strong>可</strong></li>
+            <li>期末棚卸: <strong>可</strong></li>
+            <li class="option">商品数追加オプション +¥1,480~</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">今すぐ始める</a>
+        </div>
+      </div>
 
-                    <div class="pricing-card">
-                        <div class="plan-header">
-                            <h3>BUSINESS</h3>
-                            <p class="target">エンタープライズ組織</p>
-                        </div>
-                        <div class="price-display">
-                            <span class="amount">14,800</span><span class="currency">円/月</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>商品数: <strong>10,000個</strong></li>
-                            <li>セット: 1,000個まで</li>
-                            <li>組織機能: <strong>対応</strong></li>
-                            <li>メンバー: 10人 / 拠点: 50箇所</li>
-                            <li>追加メンバー: +¥980/人</li>
-                        </ul>
-                        <a href="mailto:support@example.com" class="btn btn-outline btn-full">お問い合わせ</a>
-                    </div>
-                </div>
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">PRO</h3>
+          <p class="plan-target">個人上位組織向け</p>
+        </div>
+        <div class="card-body">
+          <div class="price-box">
+            <span class="price">¥9,800</span>
+            <span class="unit">/月</span>
+          </div>
+          <ul class="feature-list">
+            <li>商品数: <strong>2,000個まで</strong></li>
+            <li>セット: <strong>200個まで</strong></li>
+            <li>組織機能: <strong>可</strong></li>
+            <li>メンバー: 5人 / 拠点: 3箇所</li>
+            <li>CSV出力: <strong>可</strong></li>
+            <li>期末棚卸: <strong>可</strong></li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">申し込む</a>
+        </div>
+      </div>
 
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">BUSINESS</h3>
+          <p class="plan-target">組織・上位向け</p>
+        </div>
+        <div class="card-body">
+          <div class="price-box">
+            <span class="price">¥14,800</span>
+            <span class="unit">/月</span>
+          </div>
+          <ul class="feature-list">
+            <li>商品数: <strong>10,000個まで</strong></li>
+            <li>セット: <strong>1,000個まで</strong></li>
+            <li>組織機能: <strong>可</strong></li>
+            <li>メンバー: 10人 / 拠点: 50箇所</li>
+            <li>CSV出力: <strong>可</strong></li>
+            <li>期末棚卸: <strong>可</strong></li>
+            <li class="option">追加メンバー +¥980/人</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">お問い合わせ</a>
+        </div>
+      </div>
+        
                 <div class="common-features">
                     <p>【全プラン共通】在庫管理（入出庫・調整） / 移動平均法原価 / QRコード / レポート / 監査ログ</p>
                     <p class="portal-link" style="margin-top: 20px;"><a href="https://example.com/portal">ご契約中の方（Billing Portal）はこちら</a></p>
